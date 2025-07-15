@@ -1,0 +1,41 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: Arial;
+}
+.CSSheading{
+    font-size: 30px;
+    font-weight: bold;
+}
+.styleImg{
+    height: 50px;
+}
+
+.Styling{
+    background-color: black;
+    padding: 50px;
+    border: 5px dotted;
+    border-color: white;
+    border-radius: 500px;
+    cursor: pointer;
+}
+
+.Styleresult1{
+    font-size: 30px;
+}
+
+.Styleresult2{
+    margin-bottom: 60px;
+}
+.styleReset{
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.autoplay{
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
