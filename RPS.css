@@ -1,41 +1,180 @@
-body{
-    background-color: black;
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
-    font-family: Arial;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.CSSheading{
-    font-size: 30px;
+
+.CSSheading {
+    font-size: 3rem;
     font-weight: bold;
-}
-.styleImg{
-    height: 50px;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    letter-spacing: 2px;
 }
 
-.Styling{
-    background-color: black;
-    padding: 50px;
-    border: 5px dotted;
-    border-color: white;
-    border-radius: 500px;
+.game-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 2rem;
+}
+
+.choices-container {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.Styling {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    padding: 1.5rem;
     cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    min-width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-.Styleresult1{
-    font-size: 30px;
+.Styling:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    border-color: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.2);
 }
 
-.Styleresult2{
-    margin-bottom: 60px;
+.Styling:active {
+    transform: translateY(-2px);
 }
-.styleReset{
+
+.styleImg {
+    height: 60px;
+    width: 60px;
+    object-fit: contain;
+}
+
+.choice-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.Styleresult1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 1rem 0;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+
+.Styleresult2 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+}
+
+.score-container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 1rem;
+    margin: 1rem 0;
+    backdrop-filter: blur(5px);
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.styleReset {
+    background: linear-gradient(45deg, #ff6b6b, #ee5a24);
     border: none;
-    padding: 10px;
-    font-size: 15px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
     cursor: pointer;
+    border-radius: 25px;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
-.autoplay{
+
+.styleReset:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    background: linear-gradient(45deg, #ee5a24, #ff6b6b);
+}
+
+.styleReset:active {
+    transform: translateY(0);
+}
+
+.autoplay {
+    background: linear-gradient(45deg, #4ecdc4, #44a08d);
     border: none;
-    padding: 10px;
-    font-size: 15px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
     cursor: pointer;
+    border-radius: 25px;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 1rem;
+}
+
+.autoplay:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    background: linear-gradient(45deg, #44a08d, #4ecdc4);
+}
+
+.autoplay:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .CSSheading {
+        font-size: 2rem;
+    }
+    
+    .choices-container {
+        gap: 1rem;
+    }
+    
+    .Styling {
+        padding: 1rem;
+        min-width: 100px;
+    }
+    
+    .styleImg {
+        height: 50px;
+        width: 50px;
+    }
 }

@@ -5,35 +5,43 @@
     <link rel="stylesheet" href="RPS.css">
   </head>
   <body>
-    <p class="CSSheading">Rock Paper Scissors</p>
-    <button onclick="
-      playGame('rock');
-    " class="Styling"><img src="images/rock-emoji.png" class="styleImg"></button>
+    <h1 class="CSSheading">Rock Paper Scissors</h1>
+    
+    <div class="game-container">
+      <div class="choices-container">
+        <button onclick="playGame('rock');" class="Styling">
+          <img src="images/rock-emoji.png" class="styleImg" alt="Rock">
+          <span class="choice-label">Rock</span>
+        </button>
 
-    <button onclick="
-      playGame('paper');
-    " class="Styling"><img src="images/paper-emoji.png" class="styleImg"></button>
+        <button onclick="playGame('paper');" class="Styling">
+          <img src="images/paper-emoji.png" class="styleImg" alt="Paper">
+          <span class="choice-label">Paper</span>
+        </button>
 
-    <button onclick="
-      playGame('scissors');
-    " class="Styling"><img src="images/scissors-emoji.png" class="styleImg"></button>
+        <button onclick="playGame('scissors');" class="Styling">
+          <img src="images/scissors-emoji.png" class="styleImg" alt="Scissors">
+          <span class="choice-label">Scissors</span>
+        </button>
+      </div>
 
-    <p class="JSresult Styleresult1"></p>
+      <p class="JSresult Styleresult1"></p>
+      <p class="JSresult1 Styleresult2"></p>
+      <div class="score-container">
+        <p class="JSscore"></p>
+      </div>
+    </div>
 
-    <p class="JSresult1 Styleresult2"></p>
+    <div style="display: flex; gap: 1rem; justify-content: center;">
+      <button onclick="resetthescore(); JSscore();" class="styleReset">
+        Reset Score
+      </button>
+      
+      <button class="autoplay" onclick="autoPlay();">
+        Auto Play
+      </button>
+    </div>
 
-    <p class="JSscore"></p>
-
-    <button onclick="
-     resetthescore();
-     JSscore();" class="styleReset">
-    Reset Score</button>
-
-    <button class="
-    autoplay" onclick="autoplay();">
-    Auto Play</button>
-
-    <script
-    src="RPS.js"></script>
+    <script src="RPS.js"></script>
   </body>
 </html>
